@@ -1,0 +1,279 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --white: #808080;
+  --primary: #f5efe7;
+  --secondary: #c2dedc;
+  --tertiary: #4f709c;
+  --grey-1: #8e8e8e;
+}
+c2dedc * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--primary);
+}
+
+h1 {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--grey-1);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container {
+  padding: 2rem 6rem;
+  max-width: 950px;
+  margin: auto;
+}
+
+#about-section,
+#projects-section {
+  padding: 4rem 0;
+}
+
+/* Home Section */
+.navbar {
+  margin: 1rem;
+}
+
+.navbar-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.navbar-list.active {
+  background-color: var(--secondary);
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--grey-1);
+  padding: 0.35rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: var(--tertiary);
+  color: var(--white);
+}
+
+.navbar-toggle {
+  display: none;
+  color: var(--tertiary);
+  font-size: 30px;
+}
+
+.navbar-toggle:hover {
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#home-content {
+  text-align: center;
+  padding: 8rem 0 11rem 0;
+  background-color: var(--primary);
+}
+
+#home-buttons {
+  margin-top: 10px;
+}
+
+.home-icon {
+  color: var(--tertiary);
+  font-size: 26px;
+  margin: 0 2px;
+}
+
+/* About Section */
+.about-projects-heading {
+  text-align: center;
+}
+
+#about-info {
+  display: flex;
+  gap: 20px;
+}
+
+.about-card {
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.about-icon {
+  color: var(--tertiary);
+  font-size: 48px;
+}
+
+.about-card-heading {
+  color: var(--white);
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.about-description {
+  color: var(--grey-1);
+  text-align: center;
+  font-size: 14px;
+  padding: 0 2rem;
+}
+
+#skills {
+  color: var(--white);
+}
+
+/* Projects Section */
+#projects-info {
+  display: flex;
+  gap: 40px;
+}
+
+.projects-card {
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-card-heading {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.projects-card-description {
+  color: var(--grey-1);
+  font-size: 13px;
+  margin: 2rem 0;
+}
+
+.projects-card-button {
+  text-decoration: none;
+  color: #f5efe7;
+  background-color: var(--tertiary);
+  padding: 0.4rem 1.25rem;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .navbar-list {
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-toggle.active {
+    color: var(--white);
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+
+  #home-heading {
+    font-size: 32px;
+  }
+
+  #home-role {
+    font-size: 20px;
+  }
+
+  .about-projects-heading {
+    margin: 0 0 3rem 0;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #about-info,
+  #projects-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    min-width: 220px;
+    max-width: 310px;
+  }
+
+  .about-icon {
+    font-size: 36px;
+  }
+
+  .about-card-heading {
+    font-size: 22px;
+  }
+
+  .about-description {
+    font-size: 12px;
+  }
+
+  .projects-card {
+    display: block;
+    min-width: 200px;
+    max-width: 290px;
+  }
+
+  .projects-card-heading {
+    font-size: 18px;
+  }
+
+  .projects-card-description {
+    font-size: 13px;
+  }
+
+  .projects-card-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-list.active {
+    background-color: transparent;
+  }
+}

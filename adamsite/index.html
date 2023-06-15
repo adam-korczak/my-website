@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Korczak</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--FontAwesome Kit-->
+    <script
+      src="https://kit.fontawesome.com/d4fd18ea18.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!--Home Section-->
+    <section id="home-section">
+      <nav class="navbar">
+        <ul class="navbar-list" id="navbarList">
+          <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+          <li class="navbar-links" id="about-link">
+            <a href="#about-section">About</a>
+          </li>
+          <li class="navbar-links" id="projects-link">
+            <a href="#projects-section">Projects</a>
+          </li>
+          <li class="navbar-links" id="resume-link">
+            <a href="Images/resume615.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="home-content">
+        <h1 id="home-heading">Adam Korczak</h1>
+        <h2 id="home-role">Software Developer</h2>
+        <div id="home-buttons">
+          <a
+            href="https://github.com/adam-korczak"
+            target="_blank"
+            class="home-icon"
+            ><i class="fa-brands fa-github-square"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/adam-korczak/"
+            class="home-icon"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about-section">
+      <h1 class="about-projects-heading">About Me</h1>
+      <div class="container">
+        <div id="about-info">
+          <div class="about-card">
+            <i class="fa-solid fa-address-card about-icon"></i>
+            <h2 class="about-card-heading">Background</h2>
+            <p class="about-description">
+              I'm Adam- a developer based near NYC and soon graduating student.
+              I enjoy learning about new technology to create simple solutions
+              for complex problems.
+            </p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-code about-icon"></i>
+            <h2 class="about-card-heading">Skills</h2>
+            <p class="about-description">
+              I have learned, used, or am currently learning the following:
+              <span id="skills"
+                >HTML, CSS, JavaScript, TypeScript, React, Java, C#, Python,
+                SQL</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects-section">
+      <h1 class="about-projects-heading">Projects</h1>
+      <div class="container">
+        <div id="projects-info">
+          <div class="projects-card">
+            <h2 class="projects-card-heading">Trailblazr</h2>
+            <p class="projects-card-description">
+              Online space to share ideas and find like-minded individuals with
+              the same excitement for your passion as you. Currently being built
+              with React, Express, Node.js, and MongoDB.
+            </p>
+            <a
+              href="https://github.com/adam-korczak/trailblazr"
+              target="_blank"
+              class="projects-card-button"
+              >Github Code</a
+            >
+          </div>
+          <div class="projects-card">
+            <h2 class="projects-card-heading">Weather Dashboard</h2>
+            <p class="projects-card-description">
+              A sample landing page weather dashboard powered by Python, Flask,
+              and OpenWeatherAPI.
+            </p>
+            <a
+              href="https://github.com/adam-korczak/weather-dashboard"
+              target="_blank"
+              class="projects-card-button"
+              >Github Code</a
+            >
+          </div>
+          <div class="projects-card">
+            <h2 class="projects-card-heading">This Site</h2>
+            <p class="projects-card-description">
+              The site you're currently on! My personal portfolio site created
+              using HTML, CSS, and JavaScript. Periodically updated to reflect
+              new changes.
+            </p>
+            <a
+              href="https://github.com/adam-korczak/my-website"
+              target="_blank"
+              class="projects-card-button"
+              >Github Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Dark Mode worked but caused issues with background , disabled until fixed-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
